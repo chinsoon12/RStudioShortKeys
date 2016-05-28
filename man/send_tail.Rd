@@ -4,14 +4,17 @@
 \alias{send_tail}
 \title{Send tail to R console}
 \usage{
+send_tail()
+}
+\description{
+Call tail in the R console using the highlighted text as the input
+}
+\details{
 1) Highlight variable or code by double clicking or selecting
 2) Click the Addins menu
 3) Select 'Call tail'
 
 Alternatively, you can use shortcut keys
-}
-\description{
-Call tail in the R console using the highlighted text as the input
 }
 \note{
 Function depends on 1) RStudio (>= 0.99.878) with support for addins,

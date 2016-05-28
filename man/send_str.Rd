@@ -4,14 +4,17 @@
 \alias{send_str}
 \title{Send str to R console}
 \usage{
+send_str()
+}
+\description{
+Call str in the R console using the highlighted text as the input
+}
+\details{
 1) Highlight variable or code by double clicking or selecting
 2) Click the Addins menu
 3) Select 'Call str'
 
 Alternatively, you can use shortcut keys
-}
-\description{
-Call str in the R console using the highlighted text as the input
 }
 \note{
 Function depends on 1) RStudio (>= 0.99.878) with support for addins,

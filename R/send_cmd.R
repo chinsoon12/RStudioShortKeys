@@ -17,7 +17,7 @@ send_cmd <- function(fn) {
 #'
 #' Call str in the R console using the highlighted text as the input
 #'
-#' @usage
+#' @details
 #' 1) Highlight variable or code by double clicking or selecting
 #' 2) Click the Addins menu
 #' 3) Select 'Call str'
@@ -40,7 +40,7 @@ send_str <- function() {
 #'
 #' Call head in the R console using the highlighted text as the input
 #'
-#' @usage
+#' @details
 #' 1) Highlight variable or code by double clicking or selecting
 #' 2) Click the Addins menu
 #' 3) Select 'Call head'
@@ -63,7 +63,7 @@ send_head <- function() {
 #'
 #' Call tail in the R console using the highlighted text as the input
 #'
-#' @usage
+#' @details
 #' 1) Highlight variable or code by double clicking or selecting
 #' 2) Click the Addins menu
 #' 3) Select 'Call tail'
