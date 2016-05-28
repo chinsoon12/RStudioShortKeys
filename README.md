@@ -6,9 +6,9 @@ This package contains RStudio (>= 0.99.878) addins for commonly used functions (
 
 ## Usage
 After loading the package, user can then perform these steps as follows 
-1) Highlight a variable or a section of the code, 
-2) Click on Addins menu, 
-3) Select either 'Call str', 'Call head' or 'Call tail'. 
+1. Highlight a variable or a section of the code, 
+2. Click on Addins menu, 
+3. Select either 'Call str', 'Call head' or 'Call tail'. 
 
 User can also set their own keyboard shortcut keys for faster addin call.
 
