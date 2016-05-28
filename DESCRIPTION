@@ -1,9 +1,15 @@
-Package: RStudioSKeys
+Package: RStudioShortKeys
 Type: Package
-Title: What the Package Does (Title Case)
+Title: RStudioShortKeys
 Version: 0.1.0
-Author: Who wrote it
-Maintainer: Who to complain to <yourfault@somewhere.net>
-Description: More about what it does (maybe more than one line)
-License: What license is it under?
-LazyData: TRUE
+Date: 2015-05-28
+Author: chinsoon12 [aut]
+Maintainer: chinsoon12 <chinsoon12@hotmail.com>
+Depends:
+    rstudioapi (>= 0.5-1)
+Description: An addin package to complement RStudio by providing shortcut keys
+    to commonly used functions (e.g. str, head, and tail)
+License: GNU GPL v3
+URL: https://github.com/chinsoon12/RStudioShortKeys
+BugReports: https://github.com/chinsoon12/RStudioShortKeys
+RoxygenNote: 5.0.1

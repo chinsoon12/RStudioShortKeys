@@ -1,0 +1,14 @@
+Name: Call str
+Description: Send str(highlightedVariable) to console
+Binding: send_str
+Interactive: false
+
+Name: Call head
+Description: Send head(highlightedVariable) to console
+Binding: send_head
+Interactive: false
+
+Name: Call tail
+Description: Send tail(highlightedVariable) to console
+Binding: send_tail
+Interactive: false
