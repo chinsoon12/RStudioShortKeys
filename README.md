@@ -5,7 +5,7 @@ An addin package to complement RStudio by providing shortcut keys to commonly us
 This package contains RStudio (>= 0.99.878) addins for commonly used functions (str, head, and tail). 
 
 ## Usage
-After loading the package, user can then perform these steps as follows 
+After installing the package, user can then perform these steps as follows 
 
 1. Highlight a variable or a section of the code, 
 2. Click on Addins menu, 
@@ -25,9 +25,8 @@ RStudio should be as least >= 0.99.878 (for the addins) and rstudioapi has to be
 3. Install devtools package using 'install.packages("devtools")'
 4. Install rstudioapi package using 'devtools::install_github("rstudio/rstudioapi")'. If you are using a proxy server, you might need to set proxy url as mentioned [here](http://stackoverflow.com/questions/17783686/solution-how-to-install-github-when-there-is-a-proxy). If you do not know your proxy server name, check out [this](http://superuser.com/questions/346372/how-do-i-know-what-proxy-server-im-using) or open IE then click Tools, click Internet Options, click the Connections Tab, then click LAN settings.
 5. Install RStudioShortKeys using 'devtools::install_github("chinsoon12/RStudioShortKeys")'
-6. Run 'library(RStudioShortKeys)'
-7. Highlight a variable or a section of the code, 
-8. Click on Addins menu, 
-9. Select either 'Call str', 'Call head' or 'Call tail'.
-10. Set keyboard shortcut keys for easier calls.
+6. Highlight a variable or a section of the code, 
+7. Click on Addins menu, 
+8. Select either 'Call str', 'Call head' or 'Call tail'.
+9. Set keyboard shortcut keys for easier calls.
 
