@@ -8,7 +8,13 @@
 #' @import rstudioapi
 send_cmd <- function(fn) {
     highlText <- getActiveDocumentContext()$selection[[1]]$text
-    sendToConsole(paste0(fn,'(',highlText,')'))
+    code <- paste0(fn,'(',highlText,')')
+    
+    #call function and return cursor to Console
+    #callFun("sendToConsole", code, TRUE, execute, TRUE)
+    
+    #call function and return cursor to Editor
+    callFun("sendToConsole", code, TRUE, execute, FALSE)
 } #send_cmd
 
 
