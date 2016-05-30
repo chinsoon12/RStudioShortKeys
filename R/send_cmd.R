@@ -11,7 +11,7 @@ send_cmd <- function(fn) {
     code <- paste0(fn,'(',highlText,')')
     
     #call function and return cursor to Console
-    #callFun("sendToConsole", code, TRUE, execute, TRUE)
+    #callFun("sendToConsole", code, TRUE, TRUE, TRUE)
     
     #call function and return cursor to Editor
     callFun("sendToConsole", code, TRUE, TRUE, FALSE)
