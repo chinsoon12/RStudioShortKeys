@@ -14,7 +14,7 @@ send_cmd <- function(fn) {
     #callFun("sendToConsole", code, TRUE, execute, TRUE)
     
     #call function and return cursor to Editor
-    callFun("sendToConsole", code, TRUE, execute, FALSE)
+    callFun("sendToConsole", code, TRUE, TRUE, FALSE)
 } #send_cmd
 
 
