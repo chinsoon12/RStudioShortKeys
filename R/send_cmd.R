@@ -6,9 +6,10 @@
 #' @param fn name of the function to call
 #'
 #' @import rstudioapi
-send_cmd <- function(fn) {
+#'
+send_cmd <- function(fn, trailer='') {
     highlText <- getActiveDocumentContext()$selection[[1]]$text
-    code <- paste0(fn,'(',highlText,')')
+    code <- paste0(fn,'(',highlText,')',trailer)
     
     #call function and return cursor to Console
     #callFun("sendToConsole", code, TRUE, TRUE, TRUE)
@@ -36,6 +37,7 @@ send_cmd <- function(fn) {
 #' rstudioapi package (>= 0.5-1)
 #'
 #' @export
+#'
 send_str <- function() {
     send_cmd('str')
 } #send_str
@@ -59,6 +61,7 @@ send_str <- function() {
 #' rstudioapi package (>= 0.5-1)
 #'
 #' @export
+#'
 send_head <- function() {
     send_cmd('head')
 } #send_head
@@ -82,6 +85,49 @@ send_head <- function() {
 #' rstudioapi package (>= 0.5-1)
 #'
 #' @export
+#'
 send_tail <- function() {
     send_cmd('tail')
 } #send_tail
+
+
+##########################################################################
+#' Reboot rsession cleanly 
+#' 
+#' Ensure that packages are detached correctly by removing objects before doing
+#' a rsession restart
+#'
+#' @export
+#'
+clean_restart <- function() {
+    callFun("sendToConsole", "rm(list=ls()); .rs.restartR()", TRUE, TRUE, FALSE)
+} #clean_restart
+
+
+##########################################################################
+#' Print whole tbl_df / data.table
+#'
+#' Convert tbl_df or data.table to data frame and print data frame in console
+#'
+#' @export
+#'
+print_df <- function() {
+    send_cmd('as.data.frame')
+} #print_df
+
+
+##########################################################################
+#' Print sorted unique list
+#'
+#' Call sort(unique()) on the highlighted variable
+#'
+#' @importFrom magrittr '%>%'
+#'
+#' @export
+#'
+sort_uniq <- function() {
+    func <- function(x) x %>% unique %>% sort
+    send_cmd('func')
+} #sort_uniq
+
+
