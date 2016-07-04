@@ -126,8 +126,9 @@ print_df <- function() {
 #' @export
 #'
 sort_uniq <- function() {
-    func <- function(x) x %>% unique %>% sort
-    send_cmd('func')
+    assign('func_sort_unique', function(x) x %>% unique %>% sort, 
+        envir=globalenv())
+    send_cmd('func_sort_unique')
 } #sort_uniq
 
 
