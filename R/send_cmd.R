@@ -121,7 +121,7 @@ print_df <- function() {
 #'
 #' Call sort(unique()) on the highlighted variable
 #'
-#' @importFrom magrittr "%>%"
+#' @import magrittr
 #'
 #' @export
 #'
