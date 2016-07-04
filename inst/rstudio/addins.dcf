@@ -12,3 +12,18 @@ Name: Call tail
 Description: Send tail(highlightedVariable) to console
 Binding: send_tail
 Interactive: false
+
+Name: Reboot rsession
+Description: Remove all objects and then restart
+Binding: clean_restart
+Interactive: false
+
+Name: Convert tbl_df/data.table back to data frame and print df in console
+Description: Send as.data.frame(highlightedVariable) to console
+Binding: print_df
+Interactive: false
+
+Name: Call unique and then sort on a vector
+Description: Send sort(unique(highlightedVariable)) to console
+Binding: sort_uniq
+Interactive: false
