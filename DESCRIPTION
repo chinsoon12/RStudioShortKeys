@@ -10,3 +10,4 @@ Description: RStudio (>= 0.99.878) addins for commonly used functions (str, head
 License: GPL (>= 2)
 URL: https://github.com/chinsoon12/RStudioShortKeys
 BugReports: https://github.com/chinsoon12/RStudioShortKeys
+RoxygenNote: 6.0.1

@@ -4,7 +4,7 @@
 \alias{send_cmd}
 \title{Apply function on highlighted text in console}
 \usage{
-send_cmd(fn)
+send_cmd(fn, trailer = "")
 }
 \arguments{
 \item{fn}{name of the function to call}
@@ -12,4 +12,3 @@ send_cmd(fn)
 \description{
 Generic function to run function (fn) with highlighted text as input
 }
-
