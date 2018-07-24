@@ -27,3 +27,8 @@ Name: Call unique and then sort on a vector
 Description: Send sort(unique(highlightedVariable)) to console
 Binding: sort_uniq
 Interactive: false
+
+Name: Call function arguments as object
+Description: Send the highlithed string replacing ',' with ';'
+Binding: send_fc_arg
+Interactive: false

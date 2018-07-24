@@ -10,10 +10,10 @@
 send_cmd <- function(fn, trailer='') {
     highlText <- getActiveDocumentContext()$selection[[1]]$text
     code <- paste0(fn,'(',highlText,')',trailer)
-    
+
     #call function and return cursor to Console
     #callFun("sendToConsole", code, TRUE, TRUE, TRUE)
-    
+
     #call function and return cursor to Editor
     callFun("sendToConsole", code, TRUE, TRUE, FALSE)
 } #send_cmd
@@ -92,8 +92,8 @@ send_tail <- function() {
 
 
 ##########################################################################
-#' Reboot rsession cleanly 
-#' 
+#' Reboot rsession cleanly
+#'
 #' Ensure that packages are detached correctly by removing objects before doing
 #' a rsession restart
 #'
@@ -126,9 +126,28 @@ print_df <- function() {
 #' @export
 #'
 sort_uniq <- function() {
-    assign('func_sort_unique', function(x) x %>% unique %>% sort, 
+    assign('func_sort_unique', function(x) x %>% unique %>% sort,
         envir=globalenv())
     send_cmd('func_sort_unique')
 } #sort_uniq
 
 
+##########################################################################
+#' Run function's parameters highlited as R commands
+#'
+#' Replace the ',' in the function call with ';' so it's understood by R
+#'
+#' @param str_arg String of the arguments
+#'
+#' @import rstudioapi
+#'
+send_fc_arg <- function(str_arg) {
+    highlText <- getActiveDocumentContext()$selection[[1]]$text
+    code <- gsub(",", ";",highlText)
+
+    #call function and return cursor to Console
+    #callFun("sendToConsole", code, TRUE, TRUE, TRUE)
+
+    #call function and return cursor to Editor
+    callFun("sendToConsole", code, TRUE, TRUE, FALSE)
+} #send_cmd
