@@ -21,4 +21,3 @@ Function depends on 1) RStudio (>= 0.99.878) with support for addins,
 and 2) getActiveDocumentContext & sendToConsole from
 rstudioapi package (>= 0.5-1)
 }
-
